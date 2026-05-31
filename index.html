@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title> Muhammad Anugrah Alhafizh — Web Designer & UI/UX</title>
-    <meta name="description" content="Portfolio interaktif Muhammad Anugrah Alhafizh - Web Designer, UI/UX Designer, Product Designer. Menampilkan karya terbaru dan pengalaman digital.">
+    <title> Muhammad Anugrah Alhafizh — Web & Mobile Developer</title>
+    <meta name="description" content="Portfolio interaktif Muhammad Anugrah Alhafizh - Web & Mobile Developer, UI/UX Designer. Menampilkan karya terbaru dan pengalaman digital.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -455,13 +455,13 @@
             will-change: transform;
         }
         .bg-shape:nth-child(1) {
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, #ffffff 0%, #aaaaaa 35%, transparent 65%);
-    top: -100px;
-    left: -80px;
-    animation: floatShape1 28s infinite alternate;
-}
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, #ffffff 0%, #aaaaaa 35%, transparent 65%);
+            top: -100px;
+            left: -80px;
+            animation: floatShape1 28s infinite alternate;
+        }
         .bg-shape:nth-child(2) {
             width: 500px;
             height: 500px;
@@ -949,6 +949,7 @@
             width: 100px;
             opacity: 0.5;
         }
+        /* === UPDATED HERO DESCRIPTION === */
         .hero-desc {
             font-size: 1.05rem;
             color: var(--text-secondary);
@@ -957,6 +958,7 @@
             animation: fadeInUp 0.7s ease-out 0.4s both;
             line-height: 1.7;
         }
+        /* === UPDATED TECH STACK === */
         .tech-stack {
             display: flex;
             flex-wrap: wrap;
@@ -1209,45 +1211,41 @@
             border-color: var(--text);
             box-shadow: 0 0 30px var(--accent-glow);
         }
-      .card-image-wrapper {
-    height: 220px;
-    background: var(--surface-2);
-    position: relative;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-.card-image-wrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s ease;
-}
-/* Hover zoom yang halus (tidak berlebihan) */
-.portfolio-card:hover .card-image-wrapper img {
-    transform: scale(1.05);
-}
-.card-image-wrapper .card-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3rem;
-    transition: all 0.4s ease;
-    z-index: 2;
-    background: rgba(0,0,0,0.3);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.portfolio-card:hover .card-icon {
-    transform: translate(-50%, -50%) scale(1.1);
-}
+        .card-image-wrapper {
+            height: 220px;
+            background: var(--surface-2);
+            position: relative;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+        .card-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .portfolio-card:hover .card-image-wrapper img {
+            transform: scale(1.05);
+        }
+        .card-image-wrapper .card-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            transition: all 0.4s ease;
+            z-index: 2;
+            background: rgba(0,0,0,0.3);
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
         .portfolio-card:hover .card-icon {
-            transform: scale(1.15) rotate(-3deg);
+            transform: translate(-50%, -50%) scale(1.1);
         }
         .card-image-wrapper .card-shine {
             position: absolute;
@@ -1443,7 +1441,7 @@
             transform: scale(1.2);
         }
 
-        /* ===== SKILLS SECTION ===== */
+        /* ===== SKILLS SECTION (UPDATED) ===== */
         .skills-container {
             max-width: 800px;
             margin: 0 auto;
@@ -1499,7 +1497,7 @@
             width: var(--target-width);
         }
 
-        /* ===== EXPERIENCE CARDS (Redesigned - No Timeline) ===== */
+        /* ===== EXPERIENCE CARDS (UPDATED) ===== */
         .experience-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -2329,19 +2327,23 @@
         <section class="hero" id="home">
             <div class="hero-content">
                 <div class="status-badge"><span class="pulse-dot"></span> <span id="greetingText">Available for work</span></div>
+                <!-- UPDATED HERO TITLE -->
                 <h1 class="hero-title">
-                    <span class="line">Web Designer</span>
-                    <span class="line">& <span class="accent-word">UI/UX</span> Product</span>
+                    <span class="line">Web & Mobile</span>
+                    <span class="line"><span class="accent-word">Developer</span></span>
                 </h1>
                 <p class="hero-subtitle" id="heroSubtitle">
                     <span id="typedSubtitle"></span><span class="typing-cursor"></span>
                 </p>
                 <div class="divider-line"></div>
-                <p class="hero-desc">Merancang pengalaman digital yang estetis, fungsional, dan berpusat pada pengguna. Mengubah visi kreatif menjadi produk desain yang clean, modern, dan impactful.</p>
+                <!-- UPDATED HERO DESCRIPTION -->
+                <p class="hero-desc">Mahasiswa semester 4 Program Studi Sistem Informasi di Politeknik Caltex Riau dengan fokus keahlian pada Web & Mobile Development. Memiliki pengalaman praktis dalam membangun aplikasi web yang responsif menggunakan framework React dan Laravel, serta perancangan aplikasi mobile (Android/React Native). Berbekal fondasi kuat dalam UI/UX design (Figma), kemampuan pemecahan masalah (problem-solving), siap berkontribusi secara produktif sebagai Web/Mobile Developer untuk menciptakan inovasi digital yang solutif.</p>
+                <!-- UPDATED TECH STACK -->
                 <div class="tech-stack">
-                    <span class="tech-tag">Figma</span><span class="tech-tag">Adobe XD</span><span class="tech-tag">Sketch</span>
-                    <span class="tech-tag">HTML/CSS</span><span class="tech-tag">Prototyping</span><span class="tech-tag">Design Systems</span>
-                    <span class="tech-tag">User Research</span><span class="tech-tag">Wireframing</span>
+                    <span class="tech-tag">PHP</span><span class="tech-tag">Laravel</span><span class="tech-tag">React.js</span>
+                    <span class="tech-tag">React Native</span><span class="tech-tag">Python</span><span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Figma</span><span class="tech-tag">Git & GitHub</span><span class="tech-tag">HTML/CSS</span>
+                    <span class="tech-tag">Bootstrap</span><span class="tech-tag">UI/UX Design</span><span class="tech-tag">Wireframing & Prototyping</span>
                 </div>
                 <div class="hero-cta">
                     <a href="#portfolio" class="cta-primary ripple-btn"><span>↓</span> Explore Work</a>
@@ -2365,23 +2367,7 @@
             </div>
             <div class="hero-photo-card">
                 <div class="photo-card-inner">
-                    <!-- GANTI URL FOTO DIBAWAH INI DENGAN FOTO PROFIL ANDA -->
                     <img src="assets/img/DSCF3977.JPG" alt="Muhammad Anugrah Alhafizh - Profile Photo" loading="eager">
-                    <!-- 
-                        📸 CARA MENGGANTI FOTO PROFIL:
-                        
-                        1. Upload foto Anda ke hosting gratis (contoh: imgur.com, postimages.org, atau simpan di folder project)
-                        2. Copy URL gambar yang sudah di-upload
-                        3. Ganti link di atas dengan URL foto Anda
-                        
-                        Contoh: src="https://i.imgur.com/nama-foto-anda.jpg"
-                        
-                        Ukuran foto yang disarankan: 400x500 pixel (atau rasio 4:5)
-                        Format: JPG, PNG, atau WebP
-                        
-                        Atau jika foto Anda sudah ada di folder lokal, gunakan path relatif:
-                        src="assets/profile.jpg"
-                    -->
                 </div>
                 <div class="photo-card-glow"></div>
             </div>
@@ -2396,8 +2382,8 @@
             </div>
             <div class="filter-bar" id="filterBar">
                 <button class="filter-btn active" data-filter="all">All <span class="filter-count">6</span></button>
-                <button class="filter-btn" data-filter="uiux">UI/UX <span class="filter-count">2</span></button>
-                <button class="filter-btn" data-filter="web">Web Design <span class="filter-count">2</span></button>
+                <button class="filter-btn" data-filter="Web">Web Development <span class="filter-count">2</span></button>
+                <button class="filter-btn" data-filter="UI/UX">UI/UX Design <span class="filter-count">2</span></button>
                 <button class="filter-btn" data-filter="product">Product Design <span class="filter-count">1</span></button>
                 <button class="filter-btn" data-filter="branding">Branding <span class="filter-count">1</span></button>
             </div>
@@ -2435,42 +2421,46 @@
             </div>
         </section>
 
-        <!-- Skills -->
+        <!-- Skills (UPDATED) -->
         <section id="skills" class="reveal">
             <div class="section-header">
                 <span class="section-label">Skills</span>
                 <h2>Technical Proficiency</h2>
-                <p>Keahlian dan tools yang saya kuasai dalam dunia desain digital</p>
+                <p>Keahlian teknis dan tools yang saya kuasai dalam pengembangan web & mobile</p>
             </div>
             <div class="skills-container" id="skillsContainer">
                 <div class="skill-item">
-                    <div class="skill-info"><span>Figma / UI Design</span><span class="skill-percent">95%</span></div>
-                    <div class="skill-bar-outer"><div class="skill-bar-inner" data-width="95%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Adobe XD</span><span class="skill-percent">88%</span></div>
-                    <div class="skill-bar-outer"><div class="skill-bar-inner" data-width="88%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>HTML / CSS / JavaScript</span><span class="skill-percent">82%</span></div>
-                    <div class="skill-bar-outer"><div class="skill-bar-inner" data-width="82%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Prototyping & Wireframing</span><span class="skill-percent">90%</span></div>
-                    <div class="skill-bar-outer"><div class="skill-bar-inner" data-width="90%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-info"><span>Design Systems</span><span class="skill-percent">85%</span></div>
+                    <div class="skill-info"><span>PHP / Laravel</span><span class="skill-percent">85%</span></div>
                     <div class="skill-bar-outer"><div class="skill-bar-inner" data-width="85%"></div></div>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-info"><span>User Research & Testing</span><span class="skill-percent">78%</span></div>
-                    <div class="skill-bar-outer"><div class="skill-bar-inner" data-width="78%"></div></div>
+                    <div class="skill-info"><span>React.js / React Native</span><span class="skill-percent">80%</span></div>
+                    <div class="skill-bar-outer"><div class="skill-bar-inner" data-width="80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Python</span><span class="skill-percent">75%</span></div>
+                    <div class="skill-bar-outer"><div class="skill-bar-inner" data-width="75%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>MySQL / Database</span><span class="skill-percent">82%</span></div>
+                    <div class="skill-bar-outer"><div class="skill-bar-inner" data-width="82%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>UI/UX Design (Figma)</span><span class="skill-percent">88%</span></div>
+                    <div class="skill-bar-outer"><div class="skill-bar-inner" data-width="88%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>Git & GitHub</span><span class="skill-percent">80%</span></div>
+                    <div class="skill-bar-outer"><div class="skill-bar-inner" data-width="80%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info"><span>HTML / CSS / Bootstrap</span><span class="skill-percent">85%</span></div>
+                    <div class="skill-bar-outer"><div class="skill-bar-inner" data-width="85%"></div></div>
                 </div>
             </div>
         </section>
 
-        <!-- Stats -->
+        <!-- Stats (UPDATED) -->
         <section id="stats" class="reveal">
             <div class="section-header">
                 <span class="section-label">Achievements</span>
@@ -2479,82 +2469,138 @@
             </div>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <div class="stat-icon">🏆</div>
-                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-icon">🎓</div>
+                    <div class="stat-number" data-target="365">0</div>
+                    <div class="stat-label">IPK (3.65/4.00)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">🚀</div>
+                    <div class="stat-number" data-target="15">0</div>
                     <div class="stat-label">Projects Completed</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-icon">😊</div>
-                    <div class="stat-number" data-target="35">0</div>
-                    <div class="stat-label">Happy Clients</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-icon">⏳</div>
+                    <div class="stat-icon">🏆</div>
                     <div class="stat-number" data-target="5">0</div>
-                    <div class="stat-label">Years Experience</div>
+                    <div class="stat-label">Organizations</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-icon">🌟</div>
-                    <div class="stat-number" data-target="12">0</div>
-                    <div class="stat-label">Design Awards</div>
+                    <div class="stat-icon">📜</div>
+                    <div class="stat-number" data-target="1">0</div>
+                    <div class="stat-label">Certifications</div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience - Redesigned as Cards -->
+        <!-- Experience - Updated with real data -->
         <section id="experience" class="reveal">
             <div class="section-header">
-                <span class="section-label">Experience</span>
+                <span class="section-label">Projects & Experience</span>
                 <h2>Professional Journey</h2>
-                <p>Perjalanan karir dan pengalaman profesional saya</p>
+                <p>Proyek dan pengalaman organisasi yang telah saya kerjakan</p>
             </div>
             <div class="experience-grid">
+                <!-- Project 1: Binadesa -->
                 <div class="exp-card">
-                    <span class="exp-icon">💼</span>
+                    <span class="exp-icon">🏘️</span>
                     <div class="exp-year-badge"><span class="exp-year-dot"></span> 2024 — Present</div>
-                    <h3>Senior UI/UX Designer</h3>
-                    <div class="exp-company">TechCorp Indonesia — Full-time</div>
-                    <p>Memimpin desain produk digital untuk platform SaaS B2B dengan 50.000+ pengguna. Mengembangkan design system yang meningkatkan kecepatan pengembangan 40%.</p>
+                    <h3>Binadesa - Platform Desa Digital</h3>
+                    <div class="exp-company">Laravel / PHP, MySQL, Alwaysdata</div>
+                    <p>Mengembangkan Platform Desa Digital terintegrasi yang bertujuan merestrukturisasi tata kelola administrasi dan efisiensi komunikasi publik. Merancang fitur pengolahan data statistik kependudukan yang dinamis, CMS mandiri untuk berita/pengumuman, serta integrasi layanan administrasi publik secara online.</p>
                     <div class="exp-highlights">
-                        <span class="exp-highlight-tag">Design System</span>
-                        <span class="exp-highlight-tag">SaaS</span>
-                        <span class="exp-highlight-tag">Team Lead</span>
+                        <span class="exp-highlight-tag">Laravel</span>
+                        <span class="exp-highlight-tag">MySQL</span>
+                        <span class="exp-highlight-tag">CMS</span>
                     </div>
                 </div>
+                <!-- Project 2: StepByStep App -->
                 <div class="exp-card">
-                    <span class="exp-icon">🎨</span>
-                    <div class="exp-year-badge"><span class="exp-year-dot"></span> 2022 — 2024</div>
-                    <h3>Product Designer</h3>
-                    <div class="exp-company">Kreatif Digital Agency — Full-time</div>
-                    <p>Merancang UI/UX untuk 15+ klien dari berbagai industri. Spesialisasi dalam mobile app design dan website responsif dengan pendekatan user-centered design.</p>
+                    <span class="exp-icon">📱</span>
+                    <div class="exp-year-badge"><span class="exp-year-dot"></span> 2024</div>
+                    <h3>StepByStep App</h3>
+                    <div class="exp-company">Figma, Canva, Prototyping</div>
+                    <p>Merancang konsep UI/UX menggunakan Figma untuk menyelaraskan kebutuhan pencari kerja dan perusahaan, dilengkapi dengan sistem modul pembelajaran terintegrasi. Menyusun alur pengguna (user flow) yang intuitif, mulai dari fitur pencocokan keahlian (skill matching) hingga modul pembelajaran interaktif.</p>
                     <div class="exp-highlights">
-                        <span class="exp-highlight-tag">Mobile Design</span>
-                        <span class="exp-highlight-tag">Client Facing</span>
+                        <span class="exp-highlight-tag">UI/UX Design</span>
+                        <span class="exp-highlight-tag">Figma</span>
                         <span class="exp-highlight-tag">Prototyping</span>
                     </div>
                 </div>
+                <!-- Project 3: Web Portfolio -->
                 <div class="exp-card">
-                    <span class="exp-icon">🚀</span>
-                    <div class="exp-year-badge"><span class="exp-year-dot"></span> 2021 — 2022</div>
-                    <h3>Junior Web Designer</h3>
-                    <div class="exp-company">Startup Studio — Full-time</div>
-                    <p>Membangun landing page dan website company profile untuk startup tahap awal. Berkolaborasi dengan tim developer untuk implementasi desain yang pixel-perfect.</p>
+                    <span class="exp-icon">🌐</span>
+                    <div class="exp-year-badge"><span class="exp-year-dot"></span> 2024</div>
+                    <h3>Web Portfolio</h3>
+                    <div class="exp-company">Laravel, HTML, CSS, React.js</div>
+                    <p>Merancang, membangun, dan melakukan deployment platform personal branding responsif guna mendemonstrasikan keahlian teknis, rekam jejak proyek software, serta repositori kode sumber secara interaktif.</p>
                     <div class="exp-highlights">
-                        <span class="exp-highlight-tag">Web Design</span>
-                        <span class="exp-highlight-tag">HTML/CSS</span>
-                        <span class="exp-highlight-tag">Collaboration</span>
+                        <span class="exp-highlight-tag">Laravel</span>
+                        <span class="exp-highlight-tag">React.js</span>
+                        <span class="exp-highlight-tag">Deployment</span>
                     </div>
                 </div>
+                <!-- Project 4: Klasifikasi Spektrogram -->
                 <div class="exp-card">
-                    <span class="exp-icon">✏️</span>
-                    <div class="exp-year-badge"><span class="exp-year-dot"></span> 2020 — 2021</div>
-                    <h3>Freelance Designer</h3>
-                    <div class="exp-company">Self-employed</div>
-                    <p>Mengerjakan berbagai proyek freelance meliputi UI design, branding, dan ilustrasi digital untuk klien lokal dan internasional.</p>
+                    <span class="exp-icon">🔊</span>
+                    <div class="exp-year-badge"><span class="exp-year-dot"></span> 2024 — Progress</div>
+                    <h3>Klasifikasi Spektrogram Suara Knalpot</h3>
+                    <div class="exp-company">Laravel, Python, MySQL, CNN</div>
+                    <p>Mengembangkan sistem cerdas otomasi e-tilang terintegrasi yang mendeteksi knalpot tidak standar (brong) melalui analisis visual spektrogram audio frekuensi suara knalpot menggunakan algoritma Deep Learning CNN. Merancang arsitektur backend menggunakan Laravel dan MySQL untuk mengelola repositori data pelanggaran.</p>
                     <div class="exp-highlights">
-                        <span class="exp-highlight-tag">Branding</span>
-                        <span class="exp-highlight-tag">Illustration</span>
-                        <span class="exp-highlight-tag">Remote</span>
+                        <span class="exp-highlight-tag">Python</span>
+                        <span class="exp-highlight-tag">Deep Learning</span>
+                        <span class="exp-highlight-tag">CNN</span>
+                    </div>
+                </div>
+                <!-- Organization 1: UKM Badminton -->
+                <div class="exp-card">
+                    <span class="exp-icon">🏸</span>
+                    <div class="exp-year-badge"><span class="exp-year-dot"></span> 2025 — 2026</div>
+                    <h3>Pengurus Divisi Kominfo</h3>
+                    <div class="exp-company">UKM Badminton - Politeknik Caltex Riau</div>
+                    <p>Berperan aktif dalam organisasi kemahasiswaan sebagai pengurus divisi Komunikasi dan Informasi, mengelola dokumentasi kegiatan dan publikasi informasi organisasi.</p>
+                    <div class="exp-highlights">
+                        <span class="exp-highlight-tag">Kominfo</span>
+                        <span class="exp-highlight-tag">Organisasi</span>
+                        <span class="exp-highlight-tag">Publikasi</span>
+                    </div>
+                </div>
+                <!-- Organization 2: PCR Goes To School -->
+                <div class="exp-card">
+                    <span class="exp-icon">🎓</span>
+                    <div class="exp-year-badge"><span class="exp-year-dot"></span> 2025</div>
+                    <h3>PCR Goes To School</h3>
+                    <div class="exp-company">Perwakilan Kampus - Politeknik Caltex Riau</div>
+                    <p>Berperan aktif dalam mempromosikan keunggulan akademik dan fasilitas Politeknik Caltex Riau kepada calon mahasiswa baru di berbagai sekolah target.</p>
+                    <div class="exp-highlights">
+                        <span class="exp-highlight-tag">Promosi</span>
+                        <span class="exp-highlight-tag">Public Speaking</span>
+                        <span class="exp-highlight-tag">Event</span>
+                    </div>
+                </div>
+                <!-- Organization 3: BISIK + Paduan Suara -->
+                <div class="exp-card">
+                    <span class="exp-icon">🎤</span>
+                    <div class="exp-year-badge"><span class="exp-year-dot"></span> 2025 — Sekarang</div>
+                    <h3>BISIK & Paduan Suara PCR</h3>
+                    <div class="exp-company">Divisi Acara & Paduan Suara Mahasiswa</div>
+                    <p>Menyusun susunan acara (rundown) dan mengoordinasikan jalannya program diskusi/talkshow interaktif mahasiswa Sistem Informasi. Berpartisipasi aktif dalam latihan rutin dan penampilan vokal tim untuk mendukung agenda protokoler kampus PCR.</p>
+                    <div class="exp-highlights">
+                        <span class="exp-highlight-tag">Koordinator Acara</span>
+                        <span class="exp-highlight-tag">Paduan Suara</span>
+                        <span class="exp-highlight-tag">Manajemen Event</span>
+                    </div>
+                </div>
+                <!-- Organization 4: Copyeditor -->
+                <div class="exp-card">
+                    <span class="exp-icon">📝</span>
+                    <div class="exp-year-badge"><span class="exp-year-dot"></span> 2025</div>
+                    <h3>Copyeditor - Jurnal Kesehatan</h3>
+                    <div class="exp-company">Penerbitan Jurnal Pendidikan Kesehatan STIKes</div>
+                    <p>Mengoordinasikan tugas-tugas peninjauan proyek naskah publikasi ilmiah serta memastikan kepatuhan penuh terhadap standar dan regulasi penyuntingan jurnal akademik.</p>
+                    <div class="exp-highlights">
+                        <span class="exp-highlight-tag">Copyeditor</span>
+                        <span class="exp-highlight-tag">Publikasi Ilmiah</span>
+                        <span class="exp-highlight-tag">Sertifikat</span>
                     </div>
                 </div>
             </div>
@@ -2775,7 +2821,7 @@
             }
         }
 
-        // === CURSOR, RIPPLE, SCROLL, THEME, GREETING, TYPING, CLOCK, YEAR === (SINGKAT)
+        // === CURSOR, RIPPLE, SCROLL, THEME, GREETING, TYPING, CLOCK, YEAR ===
         (function(){
             const dot=document.getElementById('cursorDot'), outline=document.getElementById('cursorOutline');
             if(dot&&outline){
@@ -2798,91 +2844,72 @@
         function updateClock(){ let now=new Date(); document.getElementById('liveClock').textContent='🕐 '+now.toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric'})+' · '+now.toLocaleTimeString('id-ID',{hour:'2-digit',minute:'2-digit',second:'2-digit'})+' WIB'; } updateClock(); setInterval(updateClock,1000);
         document.getElementById('currentYear').textContent=new Date().getFullYear();
 
-       // ===== PROJECTS DATA (dengan gambar) =====
-// ===== PROJECTS DATA (dengan gambar dari folder lokal) =====
-const projects = [
-    { 
-        title: "Project Profile Guest Binadesa", 
-        desc: "Platform digital terdepan yang menghubungkan warga dengan informasi dan layanan desa secara modern dan efisien.", 
-        category: "uiux", 
-        tags: ["Laravel", "Pemrograman Framework Lanjutan", "MySQL"], 
-        icon: "", 
-        link: "https://portal-guest.alwaysdata.net/login",
-        image: "assets/img/Untitled design.jpg"
-    },
-    { 
-        title: "StepByStep", 
-        desc: "Design system modular untuk platform analytics B2B. Komponen reusable, dark mode support, visualisasi data interaktif.", 
-        category: "web", 
-        tags: ["Web Design", "Dashboard", "Design System"], 
-        icon: "📊", 
-        link: "https://example.com/saas-dashboard",
-        image: "assets/img/project-saas.jpg"
-    },
-    { 
-        title: "Smart Home Product", 
-        desc: "Konsep IoT untuk kontrol rumah pintar. Human-centered design, user flow prototyping, dan testing dengan 15 participants.", 
-        category: "product", 
-        tags: ["Product Design", "IoT", "Prototyping"], 
-        icon: "🏠", 
-        link: "https://example.com/smart-home",
-        image: "assets/img/project-smarthome.jpg"
-    },
-    { 
-        title: "Corporate Website", 
-        desc: "Website perusahaan teknologi global dengan fokus pada brand identity dan navigasi intuitif. Fully responsive.", 
-        category: "web", 
-        tags: ["Web Design", "Responsive", "Branding"], 
-        icon: "🌐", 
-        link: "https://example.com/corporate-site",
-        image: "assets/img/project-corporate.jpg"
-    },
-    { 
-        title: "Fintech Mobile App", 
-        desc: "Aplikasi keuangan dengan prioritas keamanan visual & kemudahan transaksi. Memenangkan design award internal.", 
-        category: "uiux", 
-        tags: ["UI/UX", "Fintech", "Mobile"], 
-        icon: "💳", 
-        link: "https://example.com/fintech-app",
-        image: "assets/img/project-fintech.jpg"
-    },
-    { 
-        title: "Brand Identity System", 
-        desc: "Identitas visual lengkap dari logo, color palette, tipografi hingga guidelines untuk perusahaan rintisan kreatif.", 
-        category: "branding", 
-        tags: ["Branding", "Identity", "Guideline"], 
-        icon: "✨", 
-        link: "https://example.com/brand-identity",
+        // ===== PROJECTS DATA =====
+        const projects = [
+            { 
+                title: "Project Profile Guest Binadesa", 
+                desc: "Platform digital terdepan yang menghubungkan warga dengan informasi dan layanan desa secara modern dan efisien.", 
+                category: "Web", 
+                tags: ["Laravel", "Pemrograman Framework Lanjutan", "MySQL"], 
+                icon: "", 
+                link: "https://portal-guest.alwaysdata.net/login",
+                image: "assets/img/Untitled design.jpg"
+            },
+            { 
+                title: "StepByStep - Design Aplikasi Penerimaan Kerja", 
+                desc: "Design aplikasi untuk mencegah ketimpangan sosial dan mengurangi angka pengangguran di Indonesia", 
+                category: "UI/UX", 
+                tags: ["Figma", "Canva"], 
+                icon: "📊", 
+                link: "https://www.figma.com/proto/YavQa4BUw4TFV2A8t6gigh/StepByStep-Figma?node-id=2-77&starting-point-node-id=2%3A77&t=Ff0mbO3G0RLt7iUL-1",
+                image: "assets/img/behance.jpg"
+            },
+            { 
+                title: "Web Portofolio", 
+                desc: "Web yang dikembangkan dengan tujuan untuk memperkenalkan diri saya sendiri", 
+                category: "Web", 
+                tags: ["Laravel", "React.js", "CSS"], 
+                icon: "", 
+                link: "https://anugrahalhafizh.vercel.app/",
+                image: "assets/img/porto.jpg"
+            },
+            { 
+                  title: "Sistem Klasifikasi Spektrogram Suara Knalpot Berbasis CNN", 
+        desc: "Mengembangkan sistem cerdas otomasi e-tilang terintegrasi yang mendeteksi knalpot tidak standar (brong) melalui analisis visual spektrogram audio menggunakan algoritma Deep Learning CNN.", 
+        category: "Ongoing", 
+        tags: ["Python", "Deep Learning", "CNN", "Laravel", "MySQL"], 
+        icon: "🔊", 
+        link: "https://example.com/cnn-exhaust",
         image: "assets/img/project-branding.jpg"
     }
-];
+        ];
 
-// ===== RENDER PORTFOLIO DENGAN GAMBAR =====
-function renderPortfolio(filter = "all") {
-    const grid = document.getElementById("portfolioGrid");
-    if (!grid) return;
-    const filtered = filter === "all" ? projects : projects.filter(p => p.category === filter);
-    
-    grid.innerHTML = filtered.map((p, idx) => {
-        const realIdx = projects.indexOf(p);
-        return `
-        <article class="portfolio-card" data-idx="${realIdx}" data-category="${p.category}" data-link="${p.link}">
-            <div class="card-image-wrapper">
-                ${p.image ? `<img src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.style.display='none'; this.parentElement.querySelector('.card-icon').style.display='flex';">` : ''}
-                <div class="card-icon" style="${p.image ? 'display: none;' : 'display: flex;'}">${p.icon}</div>
-                <div class="card-shine"></div>
-                <div class="card-overlay-hover"><span>🔗</span> Buka Proyek</div>
-            </div>
-            <div class="card-content">
-                <h3>${p.title}</h3>
-                <p>${p.desc.substring(0, 80)}${p.desc.length > 80 ? '...' : ''}</p>
-                <div class="card-tags">${p.tags.map(t => `<span>${t}</span>`).join('')}</div>
-            </div>
-        </article>`;
-    }).join('');
-    
-    attachCardEvents();
-}
+        // ===== RENDER PORTFOLIO =====
+        function renderPortfolio(filter = "all") {
+            const grid = document.getElementById("portfolioGrid");
+            if (!grid) return;
+            const filtered = filter === "all" ? projects : projects.filter(p => p.category === filter);
+            
+            grid.innerHTML = filtered.map((p, idx) => {
+                const realIdx = projects.indexOf(p);
+                return `
+                <article class="portfolio-card" data-idx="${realIdx}" data-category="${p.category}" data-link="${p.link}">
+                    <div class="card-image-wrapper">
+                        ${p.image ? `<img src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.style.display='none'; this.parentElement.querySelector('.card-icon').style.display='flex';">` : ''}
+                        <div class="card-icon" style="${p.image ? 'display: none;' : 'display: flex;'}">${p.icon}</div>
+                        <div class="card-shine"></div>
+                        <div class="card-overlay-hover"><span>🔗</span> Buka Proyek</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>${p.title}</h3>
+                        <p>${p.desc.substring(0, 80)}${p.desc.length > 80 ? '...' : ''}</p>
+                        <div class="card-tags">${p.tags.map(t => `<span>${t}</span>`).join('')}</div>
+                    </div>
+                </article>`;
+            }).join('');
+            
+            attachCardEvents();
+        }
 
         function attachCardEvents(){
             document.querySelectorAll('.portfolio-card').forEach(card=>{
@@ -2929,7 +2956,7 @@ function renderPortfolio(filter = "all") {
         (function(){ const skillBars=document.querySelectorAll('.skill-bar-inner'); let animated=false; function animateSkills(){ if(animated) return; const sec=document.getElementById('skills'); if(!sec) return; const rect=sec.getBoundingClientRect(); if(rect.top<window.innerHeight-100){ animated=true; skillBars.forEach(bar=>{ bar.style.setProperty('--target-width',bar.getAttribute('data-width')); bar.classList.add('animated'); }); } } window.addEventListener('scroll',animateSkills); animateSkills(); })();
         (function(){ const statNumbers=document.querySelectorAll('.stat-number[data-target]'); let animated=false; function animateStats(){ if(animated) return; const sec=document.getElementById('stats'); if(!sec) return; const rect=sec.getBoundingClientRect(); if(rect.top<window.innerHeight-100){ animated=true; statNumbers.forEach(el=>{ const target=parseInt(el.getAttribute('data-target')); const duration=2000, start=Date.now(); function update(){ let elapsed=Date.now()-start, prog=Math.min(elapsed/duration,1), eased=1-Math.pow(1-prog,3); el.textContent=Math.round(target*eased)+'+'; if(prog<1) requestAnimationFrame(update); else el.textContent=target+'+'; } requestAnimationFrame(update); }); } } window.addEventListener('scroll',animateStats); animateStats(); })();
 
-        // ===== COMMENTS (dengan like & gambar) =====
+        // ===== COMMENTS =====
         let commentsData=[
             { name:"Andi Pratama", text:"Desain portfolionya sangat clean dan profesional. Suka dengan pemilihan tipografi dan spacing-nya!", date:new Date(Date.now()-2*86400000).toLocaleString('id-ID'), image:null, likes:3, liked:false },
             { name:"Siti Rahma", text:"Great work on the UI/UX projects. Would love to collaborate on upcoming projects!", date:new Date(Date.now()-5*86400000).toLocaleString('id-ID'), image:null, likes:5, liked:false }
@@ -2968,6 +2995,7 @@ function renderPortfolio(filter = "all") {
         function showToast(msg){ let toast=document.getElementById('toastMsg'); toast.querySelector('.toast-icon').textContent=''; toast.querySelector('.toast-text').textContent=msg; let emoji=msg.match(/^[\u{1F300}-\u{1FAFF}]/u); if(emoji) { toast.querySelector('.toast-icon').textContent=emoji[0]; toast.querySelector('.toast-text').textContent=msg.substring(emoji[0].length).trim(); } toast.classList.add('show'); clearTimeout(toast._timeout); toast._timeout=setTimeout(()=>toast.classList.remove('show'),3200); }
         document.getElementById('contactForm')?.addEventListener('submit',(e)=>{ e.preventDefault(); showToast("🚀 Pesan terkirim! Terima kasih, saya akan membalas segera."); document.getElementById('contactForm').reset(); document.getElementById('messageCharCount').textContent='0/500'; });
         document.getElementById('resumeDownloadBtn')?.addEventListener('click',(e)=>{ e.preventDefault(); showToast("📄 Fitur download CV akan segera tersedia!"); });
+        
         // === MOBILE MENU & OTHERS ===
         const menuBtn=document.getElementById('menuBtn'), mobileMenu=document.getElementById('mobileMenu');
         menuBtn?.addEventListener('click',()=>{ mobileMenu.classList.toggle('active'); menuBtn.classList.toggle('open'); document.body.style.overflow=mobileMenu.classList.contains('active')?'hidden':''; });
@@ -2986,4 +3014,3 @@ function renderPortfolio(filter = "all") {
     </script>
 </body>
 </html>
-```
